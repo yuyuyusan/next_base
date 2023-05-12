@@ -1,0 +1,129 @@
+.content {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* navigation */
+.gnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min((100% - 40px), 560px);
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  visibility: hidden;
+}
+.gnav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+.gnav__listItem {
+  list-style: none;
+}
+.gnav__listItemLink {
+  font-weight: bold;
+  color: #000;
+}
+
+/* hamburger */
+.content .menu {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+}
+.content .menu .menuBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.menu:hover {
+  cursor: pointer;
+}
+.menuTop,
+.menuCenter,
+.menuBottom {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  background: #000;
+  position: absolute;
+  transition: 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menuTop {
+  top: 0%;
+}
+.menuCenter {
+  top: 15%;
+}
+.menuBottom {
+  width: 50%;
+  top: 30%;
+  right: 0;
+  left: initial;
+  transform: translate(0, 0);
+}
+.content .menu .menuText {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+/* cta */
+.content .cta a {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+}
+.content .cta a span {
+  display: block;
+  width: 36px;
+  margin: 0 auto;
+}
+.content .cta a img {
+  width: 36px;
+}
+.content .cta .ctaText {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* openNav */
+.openNav {
+  opacity: 1;
+  visibility: visible;
+}
+.open .menuTop {
+  top: 30%;
+  width: 30px;
+  transform: translate(-50%, -50%) rotate(25deg);
+}
+.open .menuCenter {
+  top: 30%;
+  width: 30px;
+  transform: translate(-50%, -50%) rotate(-25deg);
+}
+.open .menuBottom {
+  opacity: 0;
+}
+.closeNav {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -1,0 +1,85 @@
+/* ----------
+topMv
+---------- */
+.mv__container {
+  width: 100%;
+  height: clamp(300px, 50vw, 900px);
+  margin: 100px 0 60px;
+  background: url('/top_mv.png') no-repeat center center / cover;
+  position: relative;
+}
+.mv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.mv__title span {
+  display: block;
+}
+.mv__titleTop {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 2.5;
+}
+.mv__titleCenter {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 2;
+}
+.mv__titleBottom {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ----------
+topNews
+---------- */
+.topNews {
+  margin-bottom: 100px;
+}
+
+/* ----------
+topAbout
+---------- */
+.topAbout {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+.topAbout h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.topAbout h2 .en {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 64px;
+}
+.topAbout h2 .jp {
+  display: block;
+  font-size: 16px;
+}
+.about__text {
+  width: min(100%, 640px);
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 2.1;
+}
+
+
+/* ----------
+topService
+---------- */
+.topService {
+  padding: 100px 0;
+}
+/* ----------
+topWorks
+---------- */
+.topWorks {
+  padding: 100px 0;
+}
